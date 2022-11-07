@@ -1,5 +1,5 @@
 import unittest
-from statistics import Statistics, SortBy
+from statistics import Statistics
 from player import Player
 
 class PlayerReaderStub:
@@ -48,7 +48,7 @@ class TestStatistics(unittest.TestCase):
 
     
     def test_top_sort_players_by_goals(self):
-        top_players = self.statistics.top(3, SortBy.GOALS)
+        top_players = self.statistics.top(3, 2)
         sorted_players = list(map(lambda player: str(player), top_players))
         comparison = [
             "Lemieux PIT 45 + 54 = 99",
@@ -58,7 +58,7 @@ class TestStatistics(unittest.TestCase):
         self.assertEqual(sorted_players, comparison)
 
     def test_top_sort_players_by_assists(self):
-        top_players = self.statistics.top(3, SortBy.ASSISTS)
+        top_players = self.statistics.top(3, 3)
         sorted_players = list(map(lambda player: str(player), top_players))
         comparison = [
             "Gretzky EDM 35 + 89 = 124",
