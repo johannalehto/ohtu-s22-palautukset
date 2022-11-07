@@ -16,6 +16,7 @@ def main():
     print("Top point getters:")
     for player in top_scorers:
         print(player)
+        
 
 
 if __name__ == "__main__":
