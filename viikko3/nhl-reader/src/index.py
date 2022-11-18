@@ -22,12 +22,12 @@ def main():
 
         players.append(player)
 
-    country = input('Country: ')
+    country = input('Country: ').upper()
     print(f'Players from {country} {datetime.now()} \n')
 
-    for player in players:
-        if player.nationality == country:
-            print(player)
+    filtered_players = list(filter(lambda player : player.nationality == country, players))
+    for player in sorted(filtered_players, key=lambda player : player.points, reverse=True):
+        print(player)
 
 if __name__ == "__main__":
     main()
