@@ -34,6 +34,15 @@ Register With Valid Username And Too Short Password
     Submit Register
     Register Should Fail With Message  Password has to be more than 8 characters
 
+Register With Valid Username And Invalid Password
+    Click Link  Register new user
+    Register Page Should Be Open
+    Set Username  eveliina
+    Set Password  eveliinaeveliina
+    Set Password_confirmation  eveliinaeveliina
+    Submit Register
+    Register Should Fail With Message  Password cannot contain only letters
+
 # Tämä kohta rikkoo ekan Register-testin, en kyllä saa kiinni miksi
 # Tämä testi tosin toimii oikein  
 

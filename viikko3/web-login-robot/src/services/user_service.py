@@ -2,6 +2,7 @@ from entities.user import User
 from repositories.user_repository import (
     user_repository as default_user_repository
 )
+import re
 
 
 class UserInputError(Exception):
@@ -47,7 +48,10 @@ class UserService:
 
         if len(password) < 8:
             raise UserInputError("Password has to be more than 8 characters")
-  
+
+        if re.match("^[a-z]+$", password):
+            raise UserInputError("Password cannot contain only letters")
+
         # Tämä rikkoo kaiken, enpä nyt löydä että miksi
         # if password != password_confirmation:
         #     raise UserInputError("Passwords don't match")   
