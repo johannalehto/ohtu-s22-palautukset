@@ -15,6 +15,15 @@ Register With Valid Username And Password
     Set Password_confirmation  eveliina123
     Submit Register
     Register Should Succeed
+
+Register With Too Short Username And Valid Password
+    Click Link  Register new user
+    Register Page Should Be Open
+    Set Username  ev   
+    Set Password  eveliina123
+    Set Password_confirmation  eveliina123
+    Submit Register
+    Register Should Fail With Message  Username has to be more than 3 characters
     
 
 *** Keywords ***
@@ -35,4 +44,9 @@ Set Password Confirmation
 
 Register Should Succeed
     Welcome Page Should Be Open
+
+Register Should Fail With Message
+    [Arguments]  ${message}
+    Register Page Should Be Open
+    Page Should Contain  ${message}
 
