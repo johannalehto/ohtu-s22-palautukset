@@ -25,6 +25,15 @@ Register With Too Short Username And Valid Password
     Submit Register
     Register Should Fail With Message  Username has to be more than 3 characters
     
+Register With Valid Username And Too Short Password
+    Click Link  Register new user
+    Register Page Should Be Open
+    Set Username  eveliina
+    Set Password  eve123
+    Set Password_confirmation  eve123
+    Submit Register
+    Register Should Fail With Message  Password has to be more than 8 characters
+
 
 *** Keywords ***
 Submit Register
