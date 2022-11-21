@@ -34,8 +34,8 @@ Register With Valid Username And Invalid Password
     Submit Register Credentials
     Register Should Fail With Message  Password cannot contain only letters
 
-# Tämä kohta rikkoo ekan Register-testin, en kyllä saa kiinni miksi
-# Tämä testi tosin toimii oikein  
+# Tämä kohta metodissa rikkoo ekan Register-testin
+# Testi sinällään toimii oikein  
 
 # Register With Nonmatching Password And Password Confirmation
 #     Set Username  eveliina

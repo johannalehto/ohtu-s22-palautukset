@@ -52,7 +52,7 @@ class UserService:
         if re.match("^[a-z]+$", password):
             raise UserInputError("Password cannot contain only letters")
 
-        # Tämä rikkoo kaiken, enpä nyt löydä että miksi
+        # Tämä rikkoo ekan register-testin, enpä nyt löydä että miksi
         # if password != password_confirmation:
         #     raise UserInputError("Passwords don't match")   
 
