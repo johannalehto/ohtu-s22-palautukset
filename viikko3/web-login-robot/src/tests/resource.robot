@@ -13,7 +13,7 @@ ${REGISTER URL}  http://${SERVER}/register
 *** Keywords ***
 Open And Configure Browser
     Open Browser  browser=${BROWSER}
-    Maximize Browser Window
+   # Maximize Browser Window
     Set Selenium Speed  ${DELAY}
 
 Login Page Should Be Open
