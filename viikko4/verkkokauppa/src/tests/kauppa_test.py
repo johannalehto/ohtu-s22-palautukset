@@ -125,3 +125,13 @@ class TestKauppa(unittest.TestCase):
         kauppa.tilimaksu("pekka", "12345")
 
         self.assertEqual(self.viitegeneraattori_mock.uusi.call_count, 2)
+
+    def test_poista_korista_palauttaa_saldon_oikein(self):
+        kauppa = Kauppa(self.varasto_mock, self.pankki_mock, self.viitegeneraattori_mock)
+        
+        kauppa.aloita_asiointi()
+        kauppa.lisaa_koriin(1)
+        kauppa.lisaa_koriin(2)
+        self.assertEqual(kauppa._ostoskori.hinta(), 12)
+        kauppa.poista_korista(2)
+        self.assertEqual(kauppa._ostoskori.hinta(), 5)
