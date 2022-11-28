@@ -1,4 +1,4 @@
-# Retrospektiivitekniikat
+## Retrospektiivitekniikat
 
 Start, Stop, Continue, More of, Less of Wheel -tekniikan avulla osallistujat kirjaavat viiden eri osion alle huomioita työskentelytavoistaan kuluneen sprintin aikana. Eri osioihin pyritään tunnistamaan: 1. Mitä pitäisi ryhtyä tekemään, jotta työskentely sujuvoituisi, 2. Minkä tekeminen pitäisi lopettaa, joka tuo kitkaa työskentelyyn,  3. Mitä hyviä asioita on tapahtunut, joiden halutaan jatkuvan, 4. Mitä hyviä asioita halutaan tehdä vielä enemmän, 5. Mitä huonoja toimintatapoja voisi yrittää tehdä vähemmän. 
 
