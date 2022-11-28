@@ -1,0 +1,5 @@
+# Retrospektiivitekniikat
+
+Start, Stop, Continue, More of, Less of Wheel -tekniikan avulla osallistujat kirjaavat viiden eri osion alle huomioita työskentelytavoistaan kuluneen sprintin aikana. Eri osioihin pyritään tunnistamaan: 1. Mitä pitäisi ryhtyä tekemään, jotta työskentely sujuvoituisi, 2. Minkä tekeminen pitäisi lopettaa, joka tuo kitkaa työskentelyyn,  3. Mitä hyviä asioita on tapahtunut, joiden halutaan jatkuvan, 4. Mitä hyviä asioita halutaan tehdä vielä enemmän, 5. Mitä huonoja toimintatapoja voisi yrittää tehdä vähemmän. 
+
+Glad, Sad, Mad -tekniikkaa noudatettaessa kukin osallistuja kirjaa ensin ylös vapaasti sekä hyviä ja huonoja huomioita sprintin aikaisesta työskentelystä. Huomiot ryhmitellään näkyville kolmen eri otsikon alle: hyvät ja iloa tuottavat, huonot ja harmia tuottavat, sekä huonot ja turhautumista tuottavat. Samankaltaisia huomioita ryhmitellään vielä tarkemmin yhteen, jolloin voidaan niiden lukumäärän perusteella arvioida eri aiheiden painoarvoa. Lopuksi keskustellaan, mitä seuraavassa sprintissä halutaan tehdä esitetyille asioille ja mitä toimenpiteitä sovitaan tehtävän.  
