@@ -15,7 +15,11 @@ class Summa:
 
     def suorita(self):
         arvo = 0
-        arvo = int(self._syote())
+        try:
+            arvo = int(self._syote())
+        except Exception:
+            pass
+        
         self._sovelluslogiikka.plus(arvo)
 
 
