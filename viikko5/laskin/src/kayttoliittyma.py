@@ -19,8 +19,30 @@ class Summa:
             arvo = int(self._syote())
         except Exception:
             pass
-        
+
         self._sovelluslogiikka.plus(arvo)
+
+class Erotus:
+    def __init__(self, sovelluslogiikka, syote):
+        self._sovelluslogiikka = sovelluslogiikka
+        self._syote = syote
+
+    def suorita(self):
+        arvo = 0
+        try:
+            arvo = int(self._syote())
+        except Exception:
+            pass
+        
+        self._sovelluslogiikka.miinus(arvo)
+
+class Nollaus:
+    def __init__(self, sovelluslogiikka, syote):
+        self._sovelluslogiikka = sovelluslogiikka
+        self._syote = syote
+
+    def suorita(self):
+        self._sovelluslogiikka.nollaa()
 
 
 class Kayttoliittyma:
@@ -29,9 +51,9 @@ class Kayttoliittyma:
         self._root = root
 
         self._komennot = {
-            Komento.SUMMA: Summa(self._sovelluslogiikka, self._lue_syote)
-            # Komento.EROTUS: Erotus(sovelluslogiikka, self._lue_syote)
-            # Komento.NOLLAUS: Nollaus(sovelluslogiikka, self._lue_syote)
+            Komento.SUMMA: Summa(self._sovelluslogiikka, self._lue_syote),
+            Komento.EROTUS: Erotus(sovelluslogiikka, self._lue_syote),
+            Komento.NOLLAUS: Nollaus(sovelluslogiikka, self._lue_syote)
             # Komento.KUMOA: Kumoa(sovelluslogiikka, self._lue_syote)
         }
 
