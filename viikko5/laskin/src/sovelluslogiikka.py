@@ -13,3 +13,5 @@ class Sovelluslogiikka:
 
     def aseta_arvo(self, arvo):
         self.tulos = arvo
+
+
