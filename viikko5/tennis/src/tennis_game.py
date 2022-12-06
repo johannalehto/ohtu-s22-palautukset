@@ -56,16 +56,11 @@ class TennisGame:
     def get_score(self):
         score = ""
         if self.player1_score == self.player2_score:
-            score = self.check_tie()
+            return self.check_tie()
 
         elif self.player1_score >= 4 or self.player2_score >= 4:
             minus_result = self.player1_score - self.player2_score
-            score = self.check_over_four(minus_result)
+            return self.check_over_four(minus_result)
 
-        else:
-            score = self.check_rounds(score)
+        return self.check_rounds(score)
 
-
-
-
-        return score
