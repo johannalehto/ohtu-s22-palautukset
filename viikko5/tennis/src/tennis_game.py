@@ -6,10 +6,11 @@ class TennisGame:
         self.player2_score = 0
 
     def won_point(self, player_name):
+        point = 1
         if player_name == "player1":
-            self.player1_score = self.player1_score + 1
+            self.player1_score = self.player1_score + point
         else:
-            self.player2_score = self.player2_score + 1
+            self.player2_score = self.player2_score + point
 
     def check_tie(self):
         if self.player1_score == 0:
