@@ -47,15 +47,15 @@ def main():
 
     # matcher = query.build()
 
-    matcher = query.playsIn("NYR").build()
+    # matcher = query.playsIn("NYR").build()
 
-    # matcher = (
-    #   query
-    #   .playsIn("NYR")
-    #   .hasAtLeast(10, "goals")
-    #   .hasFewerThan(20, "goals")
-    #   .build()
-    # )
+    matcher = (
+      query
+      .playsIn("NYR")
+      .hasAtLeast(10, "goals")
+      .hasFewerThan(20, "goals")
+      .build()
+    )
 
     for player in stats.matches(matcher):
         print(player)

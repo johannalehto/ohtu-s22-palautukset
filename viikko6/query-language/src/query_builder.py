@@ -7,6 +7,13 @@ class QueryBuilder:
     def playsIn(self, team):
         return QueryBuilder(And(self.query, PlaysIn(team)))
 
+    def hasAtLeast(self, value, type):
+        return QueryBuilder(And(self.query, HasAtLeast(value, type)))
+    
+    def hasFewerThan(self, value, type):
+        return QueryBuilder(And(self.query, HasFewerThan(value, type)))
+    
+
     def build(self):
             return self.query
 
