@@ -45,9 +45,9 @@ def main():
 
     """Tehtävä 4"""
 
-    matcher = query.build()
+    # matcher = query.build()
 
-    # matcher = query.playsIn("NYR").build()
+    matcher = query.playsIn("NYR").build()
 
     # matcher = (
     #   query
